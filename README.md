@@ -22,8 +22,16 @@ DATABASES = {
 
 cd backend
 python -m pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
+
 python manage.py runserver
 sample user is admin with cred 12345
+
+if the port is not available then we can run the same as below 
+python manage.py runserver 127.0.0.1:8081
+
+
 
 
 
