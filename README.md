@@ -21,6 +21,10 @@ DATABASES = {
 
 
 cd backend
+
+python -m venv <localpath>\crelio => create a virtual environment
+<localpath>\crelio\Scripts\activate => to activate the virtual environment
+
 python -m pip install -r requirements.txt
 python manage.py makemigrations
 python manage.py migrate
